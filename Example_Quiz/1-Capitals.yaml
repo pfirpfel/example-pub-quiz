@@ -1,0 +1,26 @@
+title_page:
+    title: Name the capital
+
+questions:
+    - type: text
+      question: Germany
+      answer: Berlin
+
+    - type: image
+      image: ../Example_Quiz/media/capital2.jpg
+      answer: Paris
+      source: Daniela Kloth, GFDL 1.2
+
+    - type: image
+      title: Hmm...
+      image: ../Example_Quiz/media/capital3.jpg
+      answer: Tokyo
+      source: Asanagi, Public Domain
+
+    - type: markdown
+      title: South Africa
+      markdown: |
+        1. Pretoria
+        2. Cape Town
+        3. Bloemfontein
+      answer: A, B, C

@@ -1,0 +1,16 @@
+title_page:
+  title: Trivia
+
+questions:
+  - type: text
+    title: For what pseudonym is this person famous for?
+    question: Reginald Kenneth Dwight
+    answer: Elton John
+
+  - type: audio
+    audio: ../Example_Quiz/media/trivia1.ogg
+    audio_type: audio/ogg
+    title: Music
+    caption: Who composed this song?
+    answer: Ludwig van Beethoven
+    source: United States Navy Band, Public Domain

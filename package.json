@@ -1,0 +1,23 @@
+{
+  "name": "example-pub-quiz",
+  "version": "1.0.0",
+  "description": "Example project for pub-quiz-generator",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./output && node node_modules/pub-quiz-generator/index.js -d ./Example_Quiz -o ./output",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfirpfel/example-pub-quiz.git"
+  },
+  "author": "Michael Kuenzli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pfirpfel/example-pub-quiz/issues"
+  },
+  "homepage": "https://github.com/pfirpfel/example-pub-quiz#readme",
+  "devDependencies": {
+    "pub-quiz-generator": "^0.0.1"
+  }
+}
