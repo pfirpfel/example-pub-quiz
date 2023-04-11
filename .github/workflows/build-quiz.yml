@@ -17,5 +17,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Get pub-quiz-generator version
+        run: node node_modules/pub-quiz-generator/index.js --version
+
       - name: Build quiz
         run: npm run build
