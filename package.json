@@ -7,8 +7,9 @@
     "clean": "rm -rf ./output github-pages",
     "build-quiz": "node node_modules/pub-quiz-generator/index.js -d ./Example_Quiz -o ./output",
     "copy-media": "cp -r ./Example_Quiz/media ./output",
+    "copy-revealjs": "mkdirp ./output/reveal.js/ && cp -r ./node_modules/reveal.js/dist ./output/reveal.js/dist && cp -r ./node_modules/reveal.js/plugin ./output/reveal.js/",
     "test": "npm run build-quiz",
-    "build": "npm run clean && npm run build-quiz && npm run copy-media"
+    "build": "npm run clean && npm run build-quiz && npm run copy-media && npm run copy-revealjs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/pfirpfel/example-pub-quiz#readme",
   "devDependencies": {
-    "pub-quiz-generator": "^0.0.1"
+    "mkdirp": "^3.0.0",
+    "pub-quiz-generator": "^0.0.2"
   }
 }
