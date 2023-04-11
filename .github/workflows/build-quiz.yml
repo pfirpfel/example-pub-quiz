@@ -1,6 +1,9 @@
-name: Build quiz
+name: Build quiz and deploy to gh-pages
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - 'main'
 
 jobs:
   build:
@@ -22,3 +25,25 @@ jobs:
 
       - name: Build quiz
         run: npm run build
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: output/
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

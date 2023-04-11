@@ -4,8 +4,11 @@
   "description": "Example project for pub-quiz-generator",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./output && node node_modules/pub-quiz-generator/index.js -d ./Example_Quiz -o ./output",
-    "test": "npm run build"
+    "clean": "rm -rf ./output github-pages",
+    "build-quiz": "node node_modules/pub-quiz-generator/index.js -d ./Example_Quiz -o ./output",
+    "copy-media": "cp -r ./Example_Quiz/media ./output",
+    "test": "npm run build-quiz",
+    "build": "npm run clean && npm run build-quiz && npm run copy-media"
   },
   "repository": {
     "type": "git",

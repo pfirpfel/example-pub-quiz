@@ -8,7 +8,7 @@ questions:
     answer: Elton John
 
   - type: audio
-    audio: ../Example_Quiz/media/trivia1.ogg
+    audio: media/trivia1.ogg
     audio_type: audio/ogg
     title: Music
     caption: Who composed this song?
