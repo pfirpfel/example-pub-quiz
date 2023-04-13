@@ -1,8 +1,8 @@
 title: Example Pup Quiz
 display_question_numbers: false
 revealjs_path: reveal.js/
+revealjs_theme: dracula
 custom_css: |
-  .reveal ol { list-style-type: upper-alpha; }
   .answer { color: red }
   .source {
       font-size: x-small;
