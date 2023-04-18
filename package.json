@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Example project for pub-quiz-generator",
   "main": "index.js",
+  "files": [
+    "Example_Quiz",
+    "LICENSE"
+  ],
   "scripts": {
     "clean": "rm -rf ./output github-pages",
     "build-quiz": "node node_modules/pub-quiz-generator/index.js -d ./Example_Quiz -o ./output",
