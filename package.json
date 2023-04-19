@@ -5,6 +5,8 @@
   "main": "index.js",
   "files": [
     "Example_Quiz",
+    "package.json",
+    "README.md",
     "LICENSE"
   ],
   "scripts": {
