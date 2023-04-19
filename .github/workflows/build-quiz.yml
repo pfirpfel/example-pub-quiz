@@ -48,7 +48,7 @@ jobs:
         if: steps.check-tag.outputs.release == 'true'
         run: |
           mkdir release
-          npm pack --pack-destination release
+          jq -r '["example-pub-quiz-"+.version+".zip", (.files | join(" "))] | join(" ")' package.json | xargs zip -r
 
       - name: Release
         if: steps.check-tag.outputs.release == 'true'
