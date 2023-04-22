@@ -29,6 +29,6 @@
   "homepage": "https://github.com/pfirpfel/example-pub-quiz#readme",
   "devDependencies": {
     "mkdirp": "^3.0.0",
-    "pub-quiz-generator": "^0.0.5"
+    "pub-quiz-generator": "^0.0.6"
   }
 }
