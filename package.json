@@ -10,7 +10,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "clean": "rm -rf ./output github-pages",
+    "clean": "rimraf ./output github-pages",
     "build-quiz": "node node_modules/pub-quiz-generator/index.js -d ./Example_Quiz -o ./output",
     "copy-media": "cp -r ./Example_Quiz/media ./output",
     "copy-revealjs": "mkdirp ./output/reveal.js/ && cp -r ./node_modules/reveal.js/dist ./output/reveal.js/dist && cp -r ./node_modules/reveal.js/plugin ./output/reveal.js/",
@@ -29,6 +29,7 @@
   "homepage": "https://github.com/pfirpfel/example-pub-quiz#readme",
   "devDependencies": {
     "mkdirp": "^3.0.0",
+    "rimraf": "^5.0.0",
     "pub-quiz-generator": "^0.0.6"
   }
 }
