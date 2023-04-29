@@ -13,4 +13,4 @@ jobs:
         run: yamllint --version
 
       - name: Lint yaml files
-        run: yamllint Example_Quiz
+        run: yamllint quiz
