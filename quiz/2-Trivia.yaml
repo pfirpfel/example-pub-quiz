@@ -1,5 +1,7 @@
-title_page:
-  title: Trivia
+title_pages:
+  - title: Trivia questions...
+
+  - caption: ... showcasing different question types
 
 questions:
   - type: text
